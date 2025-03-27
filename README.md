@@ -8,7 +8,7 @@ Ce script utilise les outils suivants :
 
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) : pour extraire l'identifiant de la vidéo
 - [curl](https://curl.se/) : pour télécharger l'image
-- [Homebrew](https://brew.sh/) (macOS uniquement) : pour installer les dépendances si elles ne sont pas déjà présentes
+- [apt](https://doc.ubuntu-fr.org/apt): pour installer les dépendances si elles ne sont pas déjà présentes
 
 ## 🔧 Installation
 

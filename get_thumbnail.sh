@@ -1,7 +1,7 @@
 #!/bin/bash
 
-brew update
-brew install yt-dlp
+apt update
+apt install yt-dlp
 
 get_thumbnail(){
     video_url=$1

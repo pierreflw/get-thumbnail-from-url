@@ -11,11 +11,9 @@ on:
 jobs:
     ask-weather:
         runs-on: ubuntu-latest
-
         steps:
-
         - name: checkout repo
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
 
         - name: give permissions to the script
           uses: chmod +x get_thumbnails.sh

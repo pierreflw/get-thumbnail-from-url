@@ -1,0 +1,25 @@
+name: download thumbnail
+
+on:
+    workflow_dispatch:
+        inputs:
+            youtube_url:
+                description: 'URL de la vidéo'
+                required: true
+
+
+jobs:
+    ask-weather:
+        runs-on: ubuntu-latest
+
+        steps:
+
+        - name: checkout repo
+          uses: actions/checkout@v3
+
+        - name: give permissions to the script
+          uses: chmod +x get_thumbnails.sh
+
+        - name: Execute script
+          run: ./get_thumbnail ${{ inputs.youtube_url }}
+

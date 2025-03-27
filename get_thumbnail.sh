@@ -1,7 +1,7 @@
 #!/bin/bash
 
-apt update
-apt install yt-dlp
+sudo apt update
+sudo apt install yt-dlp
 
 get_thumbnail(){
     video_url=$1

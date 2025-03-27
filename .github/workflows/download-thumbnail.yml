@@ -21,3 +21,9 @@ jobs:
         - name: Execute script
           run: ./get_thumbnail.sh ${{ inputs.youtube_url }}
 
+        - name: push artefact
+          uses: actions/upload-artifact@v4
+          with:
+           name: youtube thumbnail
+           path: thumbnails/*.jpg
+

@@ -16,7 +16,7 @@ jobs:
           uses: actions/checkout@v4
 
         - name: give permissions to the script
-          run: chmod +x get_thumbnails.sh
+          run: chmod +x get_thumbnail.sh
 
         - name: Execute script
           run: ./get_thumbnail ${{ inputs.youtube_url }}

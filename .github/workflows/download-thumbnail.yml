@@ -9,7 +9,7 @@ on:
 
 
 jobs:
-    ask-weather:
+    get_thumnail:
         runs-on: ubuntu-latest
         steps:
         - name: checkout repo
@@ -19,5 +19,5 @@ jobs:
           run: chmod +x get_thumbnail.sh
 
         - name: Execute script
-          run: ./get_thumbnail ${{ inputs.youtube_url }}
+          run: ./get_thumbnail.sh ${{ inputs.youtube_url }}
 
